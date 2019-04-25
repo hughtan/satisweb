@@ -1,0 +1,25 @@
+{
+  "name": "My Repository",
+  "homepage": "http://satisweb.test",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/hughtan/octobercmshugh.git"
+    }
+  ],
+  "require-all": false,
+  "archive":{
+    "directory":"dist",
+    "format":"zip",
+    "prefix-url":"http://satisweb.test",
+    "skip-dev": true
+  },
+  "require-dependencies": true,
+  "require-dev-dependencies": true,
+  "config":{
+    "secure-http":false,
+    "github-oauth": {
+      "github.com": "a5b878a2a8e64b86b1ddf128c76bb0c74cc2433a"
+    }
+  }
+}
