@@ -18,7 +18,7 @@ use Composer\Package\PackageInterface;
 use Composer\Package\RootPackageInterface;
 
 /**
- * Build the public pages.
+ * Build the web pages.
  *
  * @author James Hautot <james@rezo.net>
  */
@@ -52,7 +52,7 @@ class WebBuilder extends Builder
 
         $this->setDependencies($packages);
 
-        $this->output->writeln('<info>Writing public view</info>');
+        $this->output->writeln('<info>Writing web view</info>');
 
         $content = $this->getTwigEnvironment()->render($this->getTwigTemplate(), [
             'name' => $name,
