@@ -5,6 +5,7 @@
  * Date: 2019/4/28
  * Time: 8:57
  */
+//读取copomser.lock文件
 $file_path = 'D:\project\ochughtest\composer.lock';
 $str = file_get_contents($file_path);
 $arr = json_decode($str,true);
